@@ -1,0 +1,95 @@
+/* General Page Styling */
+html {
+    text-align: center;
+    font-size: 17px;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f7f7f7;  /* Light background color for contrast */
+    color: #333;  /* Dark text color for better readability */
+    padding: 40px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Styling for input fields */
+input[type="file"] {
+    display: block;
+    width: 90%;  /* Increase width for better user experience */
+    padding: 12px;
+    margin: 20px auto; /* Adjusts spacing between inputs */
+    margin-bottom: 30px;
+    border: 2px solid #ccc;  /* Slightly thicker border for better visibility */
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;  /* Smooth transition effect */
+}
+
+input[type="file"]:focus {
+    border-color: #6dbffe;  /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(109, 191, 254, 0.5);  /* Add a glowing effect */
+}
+
+/* Button Styling */
+button {
+    color: #fff;
+    background-color: #6dbffe;
+    padding: 12px 24px;  /* Larger padding for a more clickable button */
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;  /* Smooth transition effect */
+}
+
+button:hover {
+    background-color: #6092b9;
+}
+
+button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 8px rgba(109, 191, 254, 0.7);  /* Adds a glowing focus effect */
+}
+
+/* Styling for headers */
+h1 {
+    font-size: 2.5rem;  /* Larger font size for the header */
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Additional padding for better spacing */
+form {
+    max-width: 600px;  /* Maximum width to avoid stretching inputs too far */
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Subtle shadow for form container */
+}
+
+/* Add some space around the inputs and button */
+form input[type="file"], form button {
+    margin: 15px 0; /* Add space between fields */
+}
+
+/* Optional: Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    input[type="file"] {
+        width: 80%;  /* Make input fields wider on smaller screens */
+    }
+
+    button {
+        width: 80%;  /* Make button the same width as input */
+    }
+
+    h1 {
+        font-size: 2rem;  /* Slightly smaller header on smaller screens */
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert PDF to Word</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+</head>
+<body>
+
+    <h1>Extracting data from PDF</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+        <label for="pdf_file">Select PDF file:</label>
+        <input type="file" name="pdf_file" accept="application/pdf" required>
+
+        <label for="word_file">Select Word File:</label>
+        <input type="file" name="word_file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+        <button type="submit">Extract Data</button>
+        </div>
+    </form>
+
+</body>
+</html>
